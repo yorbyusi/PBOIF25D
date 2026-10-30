@@ -1,15 +1,14 @@
 <?php
 
-//panggil file propertyconnstant
+// Panggil file PropertyConstant.php
 require_once('./PropertyConstant.php');
 
-use Pbo\Marketplace\Produk
+use Pbo\Marketplace\Product;
 
-//Objek
+// Objek
+$produk = new Product('P0001', 'Laptop', 1000000, 5);
 
-$produk = new product('P0001','Laptop','1000000','5');
-
-//Hasil
+// Hasil
 echo "Produk: " . $produk->nama;
 echo "<br/>";
 
